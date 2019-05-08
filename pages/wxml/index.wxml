@@ -2,10 +2,10 @@
 <text>pages/wxml/index.wxml</text>
 
 <!--一个简单的文本标签 -->
-<text>hello world</text>
+<text style='color: red; font-size: 48rpx'>hello world</text>
 
 <!-- view 中包含了 text 标签 -->
-<view>
+<view style='color:{{eleColor}};font-size:{{eleFontsize}}'>
   <text>Hello World</text>
 </view>
 
@@ -57,12 +57,13 @@
 <switch wx:for="{{numberArray}}" wx:key="*this">{{item}}</switch>
 <button bindtap='addNumberToFront'> Add to the front</button>
 
-//这个模板因为数据不知道放在哪里而没有成功
+<!-- 这个模板因为数据不知道放在哪里而没有成功
 {
   index: 0,
   msg: 'this is a template',
   time: '2016-06-18'
 }
+引用因为模板概念没有弄清楚所以也没有实践 -->
 <template name="msgItem">
   <view>
     <text>{{index}}:{{msg}}</text>

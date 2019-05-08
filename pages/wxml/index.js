@@ -5,6 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    index: 0,
+    msg: 'this is a template',
+    time: '2016-06-18',
+
+    eleColor: 'green',
+    eleFontsize: '20rpx',
+
+
     time:(new Date()).toString(),
     test:"sdfjks",
     w:"dsfas",
